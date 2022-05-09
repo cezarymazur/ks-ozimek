@@ -1,0 +1,535 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$primaryColor: #eed40c;
+$linkColor: $primaryColor;
+$enable-negative-margins: true;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+.post,
+.page {
+    margin: 0;
+}
+
+body {
+
+    p,
+    ul li {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1;
+        margin-bottom: 20px;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 0.75em;
+            width: 2px;
+            background-color: $primaryColor;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+button.custom-btn {
+    background: transparent;
+    padding: 4px 30px;
+    border-radius: 0px;
+    border: 1px solid $primaryColor;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    min-width: 200px;
+
+    &.second-inline-btn {
+        margin-left: 30px;
+
+        @media screen and (max-width: 994px) {
+            margin-left: 0px !important;
+        }
+    }
+
+    &:hover {
+        background-color: $primaryColor;
+        color: white;
+        border: 1px solid $primaryColor;
+        transition: 0.2s;
+    }
+}
+
+.subpage-main {
+    margin-top: 30px;
+}
+
+.logo-svg img {
+    min-width: 150px;
+}
+
+/***** FRONT PAGE *****/
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh;
+
+    .slide-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.carousel-content {
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 100%;
+    bottom: 10%;
+    z-index: 20;
+    color: white;
+
+    h1 {
+        font-weight: 900;
+        font-size: 5vw;
+        text-transform: uppercase;
+    }
+}
+
+.carousel-indicators {
+    bottom: 4% !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 7px !important;
+    height: 7px !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+    border: 1px solid white !important;
+    background: transparent !important;
+    margin-left: .2rem !important;
+    margin-right: .2rem !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators button.active {
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    border-radius: 50%;
+    border: 0 !important;
+    background: $primaryColor !important;
+    border: 1px solid $primaryColor !important;
+    opacity: 1 !important;
+}
+
+.sm-front {
+
+
+    position: absolute;
+    z-index: 30;
+    left: auto;
+    right: auto;
+    bottom: 25%;
+    width: 100%;
+
+    .sm-icons {
+        transform: rotate(-90deg);
+        padding-left: 5px;
+        margin-right: -110px;
+
+
+        @media screen and (max-width: 994px) {
+
+
+
+            svg.sm-icon {
+                width: 20px !important;
+                height: auto;
+            }
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            margin-right: 15px;
+
+            li {
+                list-style: none;
+                margin-right: 5px;
+                display: inline-block;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        svg.sm-icon {
+            width: 25px;
+            height: auto;
+            transform: rotate(90deg);
+        }
+
+    }
+
+    .find-us {
+        font-size: 12px;
+        display: inline-block;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 100px;
+            background-color: white;
+            margin-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+/***** FIRMA *****/
+
+
+.section-heading {
+
+    padding-left: 15px;
+    border-left: 2px solid $primaryColor;
+    max-width: 100%;
+
+
+    &.small-heading {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    &.big-heading {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 1.1;
+
+        @media screen and (max-width: 994px) {
+            font-size: 25px;
+        }
+
+        strong {
+            font-weight: 900;
+        }
+    }
+
+}
+
+.text-thick-border-right {
+    border-right: 25px solid $primaryColor;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+ul.yellow-points {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+        margin: 0px;
+        font-size: 14px;
+
+        &:before {
+            content: "\2022";
+            color: $primaryColor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.yellow-points {
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            margin: 0px;
+            font-size: 14px;
+
+            &:before {
+                content: "\2022";
+                color: $primaryColor;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+            }
+
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.company-top-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+}
+
+.full-width-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.pos-1 {
+        background-position: center 15%;
+    }
+
+    &.pos-2 {
+        background-position: center 35%;
+    }
+
+    &.pos-3 {
+        background-position: center 50%;
+    }
+
+    &.pos-4 {
+        background-position: center 75%;
+    }
+
+}
+
+
+/***** OFERTA *****/
+
+.offer-table-cell {
+    border: 1px solid white;
+    min-height: 150px;
+
+    i {
+        position: absolute;
+        color: $primaryColor;
+    }
+}
+
+.bordered-text {
+    border-left: 2px solid $primaryColor;
+    padding-left: 15px;
+    margin-top: 15px;
+
+    strong {
+        text-transform: uppercase;
+    }
+}
+
+.offer-catalogue {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    // min-height: 300px;
+
+    i {
+        font-size: 35px;
+        color: $primaryColor;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+
+    button {
+
+        &.custom-btn {
+            color: white !important;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .catalogue-heading {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 1.1;
+
+        @media screen and (max-width: 994px) {
+            font-size: 25px;
+        }
+
+        strong {
+            font-weight: 900;
+        }
+    }
+}
+
+
+/***** Usługi *****/
+
+.services {
+
+    .services-bold-text {
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-flex;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 3px;
+            height: 13px;
+            background-color: $primaryColor;
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .services-top-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 32%;
+        min-height: 100px;
+    }
+
+    .icon-box {
+        svg {
+            width: 100px;
+        }
+    }
+
+}
+
+/***** Certyfikaty *****/
+
+.certificates {
+
+    .cert-box {
+        font-size: 14px;
+
+        i {
+            font-size: 35px;
+            color: $primaryColor;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        button {
+            &.custom-btn {
+                font-size: 12px;
+                min-width: 150px;
+            }
+        }
+    }
+
+    .cert-nr {
+        font-weight: 700;
+        padding: 2px 10px;
+        background-color: $primaryColor;
+        color: white;
+        display: table;
+
+    }
+}
+
+/***** Oferta Podstrony *****/
+
+.photo-item-desc {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.5;
+    display: none;
+    z-index: 10;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+}
+
+
+.photo-item-box {
+    min-height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+
+    &:hover {
+        filter: grayscale(100%);
+        box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .4);
+        transition: 0.4s;
+
+        .photo-item-desc {
+            display: block;
+        }
+    }
+}
+
+.left-big-separator {
+    line-height: 1;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        height: 0.85rem;
+        width: 125px;
+        background-color: $primaryColor;
+        margin-right: 10px;
+
+        @media screen and (max-width: 994px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+}
+
+@import "../css/custom-css/header/header-css";
+@import "../css/custom-css/footer/footer-css";
+
+@import "../css/bootstrap/scss/bootstrap";
+
+// Then add additional custom code 

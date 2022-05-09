@@ -1,0 +1,144 @@
+/***** FOOTER *****/
+
+$primaryColor: #eed40c;
+$linkColor: $primaryColor;
+
+footer {
+
+    #pin {
+        width: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.3em;
+    }
+
+    i {
+        display: inline-block;
+        color: $primaryColor;
+        vertical-align: top;
+        margin-right: 0.3em;
+    }
+
+    p {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    div {
+
+        &.b-rectangle {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 4px;
+        }
+
+        &.b-rectangle:before {
+            content: '';
+            display: block;
+            height: 0.75em;
+            width: 15px;
+            background-color: $primaryColor;
+            margin-right: 0.3em;
+        }
+
+        &.contact-inner-div {
+            margin-top: -8px;
+
+            svg {
+                &#phone {
+                    width: 20px;
+                }
+
+                &#envelope {
+                    width: 20px;
+                }
+            }
+        }
+
+        &.contact-box {
+            margin-bottom: 15px;
+        }
+
+        &.team-description {
+            margin-left: 25px;
+        }
+    }
+
+    form {
+
+        background-color: #f9f9f9;
+        padding: 20px 20px 0px 20px;
+        font-size: 13px;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        div .textarea textarea {
+            border: 0px;
+            border-bottom: 1px solid black;
+            border-radius: 0;
+            background-color: transparent;
+            margin-top: 5px;
+        }
+
+        div .textarea textarea {
+            height: 200px;
+        }
+
+        div.pp-form p {
+            font-size: 8px;
+            line-height: 1.2;
+        }
+
+        span.ajax-loader {
+            position: absolute !important;
+        }
+
+        input[type="submit"] {
+
+            &:hover {
+                background-color: $primaryColor;
+                color: white;
+                border: 1px solid $primaryColor;
+                transition: 0.2s;
+            }
+
+            background: transparent;
+            padding: 8px 60px;
+            border-radius: 0px;
+            border: 1px solid $primaryColor;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+
+    nav {
+
+        background-color: $primaryColor;
+        text-align: center;
+
+        #footer_nav .current-menu-item a {
+            color: black;
+        }
+
+        li {
+            padding: 10px 0px;
+        }
+
+        a {
+            color: white !important;
+            text-transform: uppercase;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 13px 10px;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+
+    }
+
+}

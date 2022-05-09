@@ -1,0 +1,128 @@
+/***** FOOTER *****/
+footer #pin {
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.3em;
+}
+
+footer i {
+  display: inline-block;
+  color: #eed40c;
+  vertical-align: top;
+  margin-right: 0.3em;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 13px;
+}
+
+footer div.b-rectangle {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+footer div.b-rectangle:before {
+  content: '';
+  display: block;
+  height: 0.75em;
+  width: 15px;
+  background-color: #eed40c;
+  margin-right: 0.3em;
+}
+
+footer div.contact-inner-div {
+  margin-top: -8px;
+}
+
+footer div.contact-inner-div svg#phone {
+  width: 20px;
+}
+
+footer div.contact-inner-div svg#envelope {
+  width: 20px;
+}
+
+footer div.contact-box {
+  margin-bottom: 15px;
+}
+
+footer div.team-description {
+  margin-left: 25px;
+}
+
+footer form {
+  background-color: #f9f9f9;
+  padding: 20px 20px 0px 20px;
+  font-size: 13px;
+}
+
+footer form input[type="text"],
+footer form input[type="email"],
+footer form input[type="tel"],
+footer form div .textarea textarea {
+  border: 0px;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+footer form div .textarea textarea {
+  height: 200px;
+}
+
+footer form div.pp-form p {
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+footer form span.ajax-loader {
+  position: absolute !important;
+}
+
+footer form input[type="submit"] {
+  background: transparent;
+  padding: 8px 60px;
+  border-radius: 0px;
+  border: 1px solid #eed40c;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+footer form input[type="submit"]:hover {
+  background-color: #eed40c;
+  color: white;
+  border: 1px solid #eed40c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer nav {
+  background-color: #eed40c;
+  text-align: center;
+}
+
+footer nav #footer_nav .current-menu-item a {
+  color: black;
+}
+
+footer nav li {
+  padding: 10px 0px;
+}
+
+footer nav a {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 13px 10px;
+}
+
+footer nav a:hover {
+  color: black;
+}
+/*# sourceMappingURL=footer-css.css.map */

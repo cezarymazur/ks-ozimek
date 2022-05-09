@@ -1,0 +1,321 @@
+/***** HEADER *****/
+
+$primaryColor: #eed40c;
+$linkColor: $primaryColor;
+
+header {
+
+    .navbar-toggler {
+        padding: 0px;
+
+        i {
+            font-size: 60px;
+            color: black;
+        }
+    }
+
+    @media screen and (max-width: 994px) {
+        .main-navigation {
+            margin-left: -10px !important;
+            font-size: 14px;
+
+            a {
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+            }
+        }
+    }
+
+    ul.main-navigation {
+        margin: 0;
+
+        &.navbar-nav>li {
+            padding-bottom: 10px;
+        }
+
+        li {
+            &.menu-item-has-children {
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-line: underline;
+                    text-decoration-color: $primaryColor;
+                    text-underline-offset: 0.5em;
+
+                }
+            }
+
+            ul.sub-menu {
+
+                @media screen and (max-width: 994px) {
+                    display: block;
+                    position: relative;
+                    background-color: white;
+                    width: 100%;
+                    top: 0px;
+                    padding: 0px;
+                    margin-left: 15px;
+
+                    .current-menu-item a {
+                        color: $primaryColor !important;
+                    }
+
+                    li a {
+                        color: black !important;
+                        margin: 5px 0px;
+                    }
+
+                }
+
+                li a {
+                    padding: 5px 0px;
+                    line-height: 1;
+                    color: white;
+                    font-weight: 400 !important;
+
+                    &:hover {
+                        color: $primaryColor;
+                        text-shadow: 0px 0 transparent;
+
+                    }
+                }
+
+                .current-menu-item a {
+                    color: $primaryColor !important;
+                }
+
+                display: none;
+                position: absolute;
+                width: 250px;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 15px;
+                top: 30px;
+
+            }
+
+            &:hover {
+                ul.sub-menu {
+                    display: block;
+                    transition: 0.2s;
+                }
+            }
+
+        }
+
+    }
+
+
+    .current-menu-item a {
+        color: $primaryColor;
+        font-weight: 700;
+    }
+
+    a {
+        color: black;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        font-size: 14px;
+
+        &:hover {
+            color: $primaryColor;
+            text-shadow: 1px 0 $primaryColor;
+            transition: 0.2s;
+        }
+    }
+}
+
+.language-navigation {
+
+    @media screen and (max-width: 994px) {
+        li:first-child {
+            margin-left: -10px !important;
+
+        }
+
+        li {
+            a {
+                font-size: 14px !important;
+            }
+        }
+
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+
+        a {
+            color: black;
+            font-size: 11px;
+            text-decoration: none;
+
+            &:hover {
+                color: $primaryColor;
+                text-shadow: 1px 0 $primaryColor;
+                transition: 0.2s;
+            }
+        }
+
+        &.current-lang a {
+            color: $primaryColor;
+            font-weight: 700;
+        }
+
+
+    }
+}
+
+
+
+.sm-icons {
+
+    padding-bottom: 10px;
+
+    @media screen and (max-width: 994px) {
+
+        margin-bottom: 10px;
+        padding-bottom: 0px !important;
+
+        svg.sm-icon {
+            width: 35px !important;
+            height: auto;
+        }
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    svg.sm-icon {
+        width: 25px;
+        height: auto;
+    }
+
+}
+
+.header-front {
+
+    .navbar-toggler {
+
+        i {
+            font-size: 60px;
+            color: white;
+        }
+    }
+
+    .main-navigation {
+
+        .current-menu-item a {
+            color: $primaryColor;
+            font-weight: 700;
+        }
+
+        a {
+            color: white;
+
+            &:hover {
+                color: $primaryColor;
+                text-shadow: 1px 0 $primaryColor;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .language-navigation {
+
+        li {
+            a {
+                color: white;
+
+                &:hover {
+                    color: $primaryColor;
+                    text-shadow: 1px 0 $primaryColor;
+                    transition: 0.2s;
+                }
+            }
+
+            &.current-lang a {
+                color: $primaryColor;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+
+    .sm-icons {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 994px) {
+    &.header-front {
+
+        .navbar-toggler {
+            padding: 0px;
+        }
+
+        .navbar-collapse {
+            background-color: white;
+        }
+
+        .sm-icons {
+            display: block !important;
+        }
+
+        .main-navigation {
+
+            .current-menu-item a {
+                color: $primaryColor;
+                font-weight: 700;
+            }
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: $primaryColor;
+                    text-shadow: 1px 0 $primaryColor;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .language-navigation {
+
+            li {
+                a {
+                    color: black;
+
+                    &:hover {
+                        color: $primaryColor;
+                        text-shadow: 1px 0 $primaryColor;
+                        transition: 0.2s;
+                    }
+                }
+
+                &.current-lang a {
+                    color: $primaryColor;
+                    font-weight: 700;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.sticky-top {
+    box-shadow: 0 8px 8px -4px rgb(202, 202, 202);
+}
